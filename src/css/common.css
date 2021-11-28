@@ -134,3 +134,50 @@ input {
 .label {
   font-size: clamp(1.2rem, 2.5vw, 1.7rem);
 }
+
+.form {
+  display: flex;
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0.4rem 1rem;
+
+  font-family: inherit;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.5;
+
+  border: none;
+
+  border-radius: 0.5rem;
+
+  transition: var(--time) var(--cubic);
+  transition-property: color, box-shadow;
+  appearance: none;
+}
+
+.form__input {
+  padding: 0.4rem 1rem;
+
+  max-width: 10rem;
+  font-family: inherit;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.5;
+
+  background: 0 0 / 300% 200% radial-gradient(circle at top left, #fff, #ddd);
+  border: 1px solid #eceff4;
+  transition: var(--time) var(--cubic);
+  transition-property: color, box-shadow;
+  appearance: none;
+}
+
+.form__input:focus,
+.form__input:hover {
+  outline: #5e81ac;
+  border: 1px solid #5e81ac;
+}
