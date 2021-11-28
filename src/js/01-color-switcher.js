@@ -7,8 +7,7 @@ const options = { once: true, passive: true };
 let intervalID = null;
 
 const changeBgColor = el => (el.style.backgroundColor = getRandomHexColor());
-const toggleDisabled = (...elems) =>
-  elems.forEach(el => el.toggleAttribute('disabled'));
+const toggleDisabled = (...elems) => elems.forEach(el => el.toggleAttribute('disabled'));
 
 const btnMakeAction = btn => {
   if (btn === startBtn) {
